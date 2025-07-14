@@ -16,7 +16,7 @@ program
   .parse(process.argv);
 
 const opts = program.opts();
-const dir = opts.dir;
+const dir = path.resolve(options.dir || process.cwd());;
 const output = opts.output;
 const fps = parseInt(opts.fps);
 

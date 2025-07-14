@@ -15,7 +15,7 @@ program
   .parse(process.argv);
 
 const options = program.opts();
-const dir = options.dir;
+const dir = path.resolve(options.dir || process.cwd());;
 const start = parseInt(options.start);
 const reverse = options.reverse;
 
