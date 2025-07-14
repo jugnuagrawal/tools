@@ -1,0 +1,28 @@
+{
+  "name": "firefly-sequence",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "commander": "^14.0.0"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  },
+  "bin": {
+    "firefly-sequence": "./index.js"
+  },
+  "pkg": {
+    "outputPath": "dist",
+    "targets": [
+      "node18-win-x64",
+      "node18-linux-x64",
+      "node18-macos-arm64"
+    ]
+  }
+}
